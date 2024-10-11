@@ -1,26 +1,25 @@
-/* eslint-disable react/jsx-pascal-case */
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card_Compect from "./card.js";
 
 function App_Card() {
-  const first_function = (meassage) => {
-    console.log("this is for file app " + meassage);
+  const first_function = (message) => {
+    console.log("This is for file app " + message);
   };
+
   const data = [
-    { title: "title_1", des: "dis_1" },
-    { title: "title_2", des: "dis_2" },
-    { title: "title_3", des: "dis_3" },
-    
+    { title: "Title 1", des: "Description 1" },
+    { title: "Title 2", des: "Description 2" },
+    { title: "Title 3", des: "Description 3" },
   ];
+
   return (
     <div className="container">
       <div className="row">
         {data.map((item, index) => (
-          <div className="col-lg-4 col-12 p-2">
+          <div className="col-lg-4 col-md-6 col-sm-12 p-2" key={index}>
             <Card_Compect
               for_click={first_function}
-              key={index}
               title={item.title}
               des={item.des}
             />

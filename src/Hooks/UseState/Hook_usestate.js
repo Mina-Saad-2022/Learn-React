@@ -17,6 +17,7 @@ const Hook_usestate = () => {
   const type = (event) => {
     settext(event.target.value);
   };
+
   return (
     <div className="container">
       <div className="row">
@@ -24,7 +25,7 @@ const Hook_usestate = () => {
           <h2>examples for use 'useState' ...</h2>
         </div>
 
-        <div className="col-5 border p-2 m-1">
+        <div className="col-12 col-lg-5 border p-2 m-1">
           <div className="col-12">
             <h5>Add or decrease the number </h5>
           </div>
@@ -45,7 +46,7 @@ const Hook_usestate = () => {
           </div>
         </div>
 
-        <div className="col-5 border p-2 m-1">
+        <div className="col-12 col-lg-5 border p-2 m-1">
           <div className="col-12">
             <h5>change text Based on what is written in input</h5>
           </div>
@@ -57,7 +58,7 @@ const Hook_usestate = () => {
           </div>
         </div>
 
-        <div className="col-5 border p-2 m-1">
+        <div className="col-12 col-lg-5 border p-2 m-1">
           <div className="col-12">
             <h5>Text switching </h5>
           </div>
@@ -71,7 +72,7 @@ const Hook_usestate = () => {
           <p>{test}</p>
         </div>
 
-        <div className="col-5 border p-2 m-1">
+        <div className="col-12 col-lg-5 border p-2 m-1">
           <div className="col-12">
             <h5>Show and hide text </h5>
           </div>
